@@ -22,7 +22,7 @@ const Navbar = ({ user }) => {
           <li>
             <Link to="/">HOME</Link>
           </li>
-          <li><a href='abc'>About</a></li>
+          <li><Link to='categorie'>Categories</Link></li>
           <li>
             <Link to='write'>Write</Link>
           </li>

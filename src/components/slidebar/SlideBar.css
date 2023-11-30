@@ -34,10 +34,7 @@
     padding: .4rem 0;
 }
 
-.categories-items {
-    display: flex;
-    justify-content: space-evenly;
-}
+.categories-items {}
 
 .social-container {
     display: flex;

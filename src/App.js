@@ -21,6 +21,7 @@ import {
   Routes,
   Link
 } from 'react-router-dom';
+import Categorie from './pages/categories/Categorie';
 
 function App() {
   const user = false;
@@ -37,6 +38,7 @@ function App() {
           <Route path='/write' element={user ? <WritePage /> : <SignInPage />} />
           <Route path='/single/:postId' element={<SinglePage data={data} />} />
           <Route path='/userprofile' element={user ? <UserSetting /> : <SignInPage />} />
+          <Route path='/categorie' element={<Categorie />} />
 
         </Routes>
         <Footer />

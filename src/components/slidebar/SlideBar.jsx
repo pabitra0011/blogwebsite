@@ -20,12 +20,11 @@ const SlideBar = () => {
         <h3 className='heading'>Categories</h3>
 
         <div className="categories-items">
-          <p>Life</p>
-          <p>Spritual</p>
-        </div>
-        <div className="categories-items">
-          <p>Life</p>
-          <p>Spritual</p>
+          <li><a href='f'>Life</a></li>
+          <li><a href='f'>Technology</a></li>
+          <li><a href='f'>Sptitiul</a></li>
+          <li><a href='f'>Tricks</a></li>
+          <li><a href='f'>Science</a></li>
         </div>
 
         <h3 className='heading'>Follow Us</h3>
