@@ -1,0 +1,85 @@
+.loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* background-color: rebeccapurple; */
+    background: url('https://th.bing.com/th/id/R.71fc55a0f2becd702cc4a893980dea57?rik=83Gi92YRnYiq%2bQ&riu=http%3a%2f%2fhdwpro.com%2fwp-content%2fuploads%2f2015%2f12%2fhd-nature-background.jpg&ehk=6galcGOOat48Opvx9mgpfxdiK4IfEkcL3AS%2bOF3M9Uc%3d&risl=&pid=ImgRaw&r=0');
+    /* color: #fff; */
+    opacity: 0.7;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.loginPage-container {
+    width: 400px;
+    padding: 2rem 0;
+    border-radius: 20px;
+    background-color: #fff;
+    opacity: 0.6;
+    color: black;
+    box-shadow: rgba(19, 19, 253, 0.2) 0px 7px 29px 0px;
+}
+
+.loginPage-container h1 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.login-form label {
+    font-size: 22px;
+    padding: .3rem 0;
+}
+
+.login-form input {
+    height: 30px;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 1px solid rgb(197, 194, 194);
+    border-radius: 10px;
+    padding: .2rem;
+    font-size: 18px;
+}
+
+.login-form input:focus {
+    outline: none;
+}
+
+.logIn-btn {
+    width: 100px;
+    font-size: 19px;
+    padding: .2rem 1rem;
+    margin: 0 auto 2rem auto;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid green;
+    background-color: #fff;
+    color: green;
+    cursor: pointer;
+}
+
+.logIn-btn:hover {
+    background-color: green;
+    color: #fff;
+}
+
+.signUp-btn {
+    background-color: red;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    padding: .3rem 0;
+    cursor: pointer;
+}
+
+.signUp-btn:hover {
+    background-color: #fff;
+    border: 1px solid red;
+}

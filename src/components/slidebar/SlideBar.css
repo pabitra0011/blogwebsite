@@ -1,0 +1,52 @@
+.sidebar {
+    flex: 3;
+    /* border: 1px solid red; */
+
+    margin: 20px;
+    border-radius: 10px;
+
+}
+
+.sideBar-item {
+    background-color: rgb(245, 252, 252);
+    width: 80%;
+    margin: auto;
+}
+
+.sideBar-item .heading {
+    text-align: center;
+    border-top: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    margin: 1rem 0;
+}
+
+.sideBar-item .img {
+    max-width: 200px;
+    margin: 1rem auto;
+}
+
+.sideBar-item .img img {
+    width: 100%;
+}
+
+.about-txt {
+    text-align: center;
+    padding: .4rem 0;
+}
+
+.categories-items {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-container {
+    display: flex;
+    gap: 1.1rem;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.social-container .icon {
+    font-size: 1.4rem;
+
+}

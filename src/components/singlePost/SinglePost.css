@@ -1,0 +1,40 @@
+.singlePost {
+    flex: 9;
+    border: 1px solid rgb(235, 235, 235);
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+.singlePost .singlePost-img {
+    width: 100%;
+    height: 380px;
+    border-radius: 20px;
+}
+
+.singlePost .singlePost-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+
+.singlePost-about {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(145, 143, 143);
+
+}
+
+.singlePost-text {
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.singlePost-title {
+    text-align: center;
+    padding: 0.5rem 0;
+}

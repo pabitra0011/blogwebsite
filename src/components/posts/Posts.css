@@ -1,0 +1,10 @@
+.posts {
+    flex: 9;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: rgb(238, 238, 238);
+    margin: 2rem 0 0 0;
+}

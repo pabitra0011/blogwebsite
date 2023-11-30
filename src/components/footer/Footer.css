@@ -1,0 +1,27 @@
+.footer {
+    /* background-color: rgb(197, 197, 197); */
+    /* color: #fff; */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #fff;
+    padding: 1rem 0;
+    background-color: rgb(31, 30, 30);
+}
+
+.footer-container .row li a {
+    color: #fff;
+
+}
+
+.footer-container .row li {
+    margin: .4rem 0;
+}
+
+.cpywrt-section {
+    color: black;
+    padding: .4rem 0;
+    background-color: bisque;
+}

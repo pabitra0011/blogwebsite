@@ -1,0 +1,80 @@
+.write-page {
+    padding-top: 2rem;
+    background-color: rgb(243, 243, 243);
+}
+
+.write-form {
+    position: relative;
+    width: 70vw;
+    margin: auto;
+    padding-top: 5rem;
+}
+
+.writepage-img {
+    width: 70vw;
+    height: 250px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+.writeForm-container {
+    margin-left: 1.5rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.write-icon {
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+.writeInput {
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+    margin-bottom: 1rem;
+}
+
+.writeInput:focus {
+    outline: none;
+}
+
+.writeTextarea {
+    font-size: 20px;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+    height: 50vh;
+}
+
+.writeTextarea:focus {
+    outline: none;
+}
+
+.writeSubmit {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    padding: .4rem 1rem;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.writeSubmit:hover {
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
+}
