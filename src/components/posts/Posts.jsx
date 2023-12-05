@@ -9,17 +9,23 @@ import Data from '../../data/data'
 
 const Posts = () => {
   return (
+    <>
+      {/* <div className="city">
+        <h1>Welcome to { } jhgfdfghjkjhgfd</h1>
+      </div> */}
+      <div className='posts'>
 
-    <div className='posts'>
-      {
-        Data.map((Dataitem, index) =>
-          <>
-            <Link to='/single/12'> <Post data={Dataitem} i={index} />
-            </Link>
-          </>
-        )
-      }
-    </div>
+        {
+          Data.map((Dataitem, index) =>
+            <>
+              <Post data={Dataitem} i={index} />
+              {/* <Link to='/single/12'> */}
+              {/* </Link> */}
+            </>
+          )
+        }
+      </div>
+    </>
   )
 }
 

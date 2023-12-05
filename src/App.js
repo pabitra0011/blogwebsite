@@ -1,3 +1,4 @@
+import { CityContextProvider, UserDataProvider } from './Usercontext';
 
 import './App.css';
 import Header from './components/header/Header';
@@ -22,28 +23,32 @@ import {
   Link
 } from 'react-router-dom';
 import Categorie from './pages/categories/Categorie';
+import CityNav from './components/citynav/CityNav';
 
 function App() {
-  const user = false;
+  const user = true;
 
   return (
-    <div className="App">
-      <Router>
-        <Navbar user={user} />
-        <Routes>
+    <CityContextProvider>
+      <div className="App">
+        <CityNav />
+        <Router>
+          <Navbar user={user} />
+          <Routes>
 
-          <Route path='/' element={<HomePage />} />
-          <Route path='/signup' element={user ? <HomePage /> : <SignInPage />} />
-          <Route path='/login' element={user ? <HomePage /> : <LogInPage />} />
-          <Route path='/write' element={user ? <WritePage /> : <SignInPage />} />
-          <Route path='/single/:postId' element={<SinglePage data={data} />} />
-          <Route path='/userprofile' element={user ? <UserSetting /> : <SignInPage />} />
-          <Route path='/categorie' element={<Categorie />} />
+            <Route path='/' element={<HomePage />} />
+            <Route path='/signup' element={user ? <HomePage /> : <SignInPage />} />
+            <Route path='/login' element={user ? <HomePage /> : <LogInPage />} />
+            <Route path='/write' element={user ? <WritePage /> : <SignInPage />} />
+            <Route path='/single/:postId' element={<SinglePage data={data} />} />
+            <Route path='/userprofile' element={user ? <UserSetting /> : <SignInPage />} />
+            <Route path='/categorie' element={<Categorie />} />
 
-        </Routes>
-        <Footer />
-      </Router>
-    </div>
+          </Routes>
+          <Footer />
+        </Router>
+      </div>
+    </CityContextProvider>
   );
 }
 

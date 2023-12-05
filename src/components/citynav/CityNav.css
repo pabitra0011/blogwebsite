@@ -1,0 +1,12 @@
+.cityNav-container {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: .3rem 0;
+}
+
+.cityNav-container li {
+    border: 1px solid red;
+    padding: .2rem .5rem;
+}
