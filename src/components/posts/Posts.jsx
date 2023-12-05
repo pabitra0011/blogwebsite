@@ -7,21 +7,18 @@ import { Link } from 'react-router-dom';
 
 import Data from '../../data/data'
 
+console.log(Data)
+
 const Posts = () => {
   return (
     <>
-      {/* <div className="city">
-        <h1>Welcome to { } jhgfdfghjkjhgfd</h1>
-      </div> */}
       <div className='posts'>
 
         {
           Data.map((Dataitem, index) =>
-            <>
-              <Post data={Dataitem} i={index} />
-              {/* <Link to='/single/12'> */}
-              {/* </Link> */}
-            </>
+            // <div key={index}>
+            <Post key={index} data={Dataitem} i={index} />
+            // </div>
           )
         }
       </div>

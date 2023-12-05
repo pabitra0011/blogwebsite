@@ -4,7 +4,7 @@ import { useParams, useLocation } from 'react-router-dom';
 
 import data from '../../data/data'
 
-const SinglePost = () => {
+const SinglePost = ({ key }) => {
 
     const { i } = useParams();
     const { search } = useLocation();
@@ -24,7 +24,7 @@ const SinglePost = () => {
 
 
     return (
-        <div className='singlePost'>
+        <div key={key} className='singlePost'>
             <div className="singlePost-img">
                 <img src={postData.img} alt='a' />
             </div>
