@@ -35,21 +35,20 @@ function App() {
         <Router>
           <Navbar user={user} />
           <Routes>
-
             <Route path='/' element={<HomePage />} />
-            <Route path='/signup' element={user ? <HomePage /> : <SignInPage />} />
-            <Route path='/login' element={user ? <HomePage /> : <LogInPage />} />
-            <Route path='/write' element={user ? <WritePage /> : <SignInPage />} />
+            <Route path='/signup' element={<SignInPage />} />
+            <Route path='/login' element={<LogInPage />} />
+            <Route path='/write' element={<WritePage />} />
             <Route path='/single/:postId' element={<SinglePage data={data} />} />
-            <Route path='/userprofile' element={user ? <UserSetting /> : <SignInPage />} />
+            <Route path='/userprofile' element={<UserSetting />} />
             <Route path='/categorie' element={<Categorie />} />
-
           </Routes>
           <Footer />
         </Router>
       </div>
     </CityContextProvider>
   );
+
 }
 
 export default App;
