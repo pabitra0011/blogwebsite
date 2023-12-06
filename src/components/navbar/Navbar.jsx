@@ -29,7 +29,7 @@ const Navbar = () => {
           <li>
             <Link to='write'>Write</Link>
           </li>
-          <li><a href='abc'>Contact</a></li>
+          <li><Link to='contact' >Contact </Link> </li>
           {/* <li><a href='abc'>Logout</a></li> */}
         </ul>
       </div>

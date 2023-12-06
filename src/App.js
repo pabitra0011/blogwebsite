@@ -12,7 +12,7 @@ import WritePage from './pages/writePage/WritePage';
 import UserSetting from './pages/userSetting/UserSetting';
 import LogInPage from './pages/loginPage/LogInPage';
 import SignInPage from './pages/signInPage/SignInPage';
-
+import Contact from './pages/contact/Contact';
 import data from './data/data'
 
 import {
@@ -35,7 +35,7 @@ function App() {
       <CityContextProvider>
         <div className="App">
           <CityNav />
-          <Router>
+          <Router basename='/blogwebsite'>
             <Navbar user={user} />
 
             <Routes>
@@ -46,8 +46,9 @@ function App() {
               <Route path='/write' element={<WritePage />} />
               <Route path='/single/:postId' element={<SinglePage data={data} />} />
               <Route path='/userprofile' element={<UserSetting />} />
+              <Route path='/contact' element={<Contact />} />
               <Route path='/categorie' element={<Categorie />} />
-              <Route path='*' element={<HomePage />} />
+              {/* <Route path='*' element={<HomePage />} /> */}
 
             </Routes>
             <Footer />

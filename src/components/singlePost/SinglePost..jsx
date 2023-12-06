@@ -11,7 +11,7 @@ const SinglePost = ({ key }) => {
     const params = new URLSearchParams(search);
     const postDataparam = params.get('blogItem');
     const postData = JSON.parse(decodeURIComponent(postDataparam));
-    console.log(postData)
+    // console.log(postData)
     // const postData = {
     //     title: params.get('title'),
     //     img: params.get('img'),
@@ -21,12 +21,12 @@ const SinglePost = ({ key }) => {
     //     content1: params.get('content1'),
     //     content2: params.get('content2')
     // };
-
+    console.log(postData)
 
     return (
         <div key={key} className='singlePost'>
             <div className="singlePost-img">
-                <img src={postData.img} alt='a' />
+                <img src={postData.img ? postData.img : ''} alt='a' />
             </div>
             <div className="singlePost-title">
                 <h2>{postData.title}</h2>
