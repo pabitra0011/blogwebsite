@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 import Data from '../../data/data'
 
-console.log(Data)
+// console.log(Data)
 
 const Posts = () => {
   return (

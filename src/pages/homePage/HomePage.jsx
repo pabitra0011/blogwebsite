@@ -7,6 +7,9 @@ import SlideBar from '../../components/slidebar/SlideBar'
 
 
 const HomePage = () => {
+    console.log("I am Here");
+
+
     return (
         <>
             {/* <Header /> */}

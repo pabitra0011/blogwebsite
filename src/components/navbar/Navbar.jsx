@@ -4,10 +4,13 @@ import { FaSistrix } from "react-icons/fa6";
 import { FaFacebook, FaInstagram, FaTwitter, FaPinterest } from "react-icons/fa";
 import ProfileIcon from '../../assetes/profileimg.jpeg'
 import { Link } from 'react-router-dom';
+import { useAuth } from '../../hooks/AuthContext';
 
 
-const Navbar = ({ user }) => {
+const Navbar = () => {
   // const user = false;
+  const { user, login, logout } = useAuth();
+
 
   return (
     <div className='nav'>
@@ -35,6 +38,7 @@ const Navbar = ({ user }) => {
         <div className='search-section'>
           <img src={ProfileIcon} alt='hi' />
           <FaSistrix className='nav-icon' />
+          <button onClick={logout}>Logout</button>
         </div>
         :
         <div className='nav-menu-login'>
