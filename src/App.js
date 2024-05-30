@@ -34,7 +34,6 @@ function App() {
     <AuthProvider>
       <CityContextProvider>
         <div className="App">
-          <CityNav />
           <Router basename='/blogwebsite'>
             <Navbar user={user} />
 
